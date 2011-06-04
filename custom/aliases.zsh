@@ -31,3 +31,6 @@ alias hack_gowalla="screen -c ~/.screen/gowalla.screen -S Gowalla"
 alias hack_sifter="screen -c ~/.screen/sifter.screen -S Sifter"
 alias hack_friendship="screen -c ~/.screen/friendship.screen -S Friendship"
 
+# Editing
+alias e="mvim"
+
