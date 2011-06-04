@@ -1,6 +1,6 @@
 # export EDITOR='mate -w'
 export EDITOR="mvim"
-export GIT_EDITOR='mvim -f -c "au VimLeave * !open -a Terminal"'
+export GIT_EDITOR='mvim -f -c "au VimLeave * !open -a iTerm"'
 
 export PATH=/usr/local/bin:$PATH # My custom stuff
 export PATH=~/Develop/dotfiles/bin:$PATH # My scripts
