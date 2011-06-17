@@ -1,7 +1,12 @@
 locals.zsh
 log/.zsh_history
 projects.zsh
+<<<<<<< HEAD
 custom/*
 !custom/example
 !custom/example.zsh
 cache
+=======
+custom/*.zsh
+cache/
+>>>>>>> b309f173733fe455baecd0a9fc1d18f2ee4993c1

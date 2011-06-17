@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #usage: title short_tab_title looooooooooooooooooooooggggggg_windows_title
 #http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss3.1
 #Fully support screen, iterm, and probably most modern xterm and rxvt
@@ -27,3 +28,26 @@ function preexec {
   local CMD=${1[(wr)^(*=*|sudo|ssh|-*)]} #cmd name only, or if this is sudo or ssh, the next cmd
   title "$CMD" "%100>...>$2%<<"
 }
+=======
+case "$TERM" in
+  xterm*|rxvt*)
+    preexec () {
+      print -Pn "\e]0;%n@%m: $1\a"  # xterm
+    }
+    precmd () {
+      print -Pn "\e]0;%n@%m: %~\a"  # xterm
+    }
+    ;;
+  screen*)
+    # preexec () {
+    #   local CMD=${1[(wr)^(*=*|sudo|ssh|-*)]}
+    #   echo -ne "\ek$CMD\e\\"
+    #   print -Pn "\e]0;%n@%m: $1\a"  # xterm
+    # }
+    # precmd () {
+    #   echo -ne "\ekzsh\e\\"
+    #   print -Pn "\e]0;%n@%m: %~\a"  # xterm
+    # }
+    ;;
+esac
+>>>>>>> b309f173733fe455baecd0a9fc1d18f2ee4993c1
